@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="card filter-container">
+    <p><strong>Filters</strong></p>
+    <p class="text-center flters-header">Launch Year</p>
+    <div class="row">
+      <div class="col-6" *ngFor="let item of years; let index = index">
+        <button type="button" class="btn btn-success m-1 filter-btn" (click)="onClickFilters('year', item, index)" [ngClass]="{'selctedButton': selctedYearIndex === index}">
+          {{ item }}
+        </button>
+      </div>
+    </div>
+    <p class="text-center flters-header">Successfull Launch</p>
+    <div class="row">
+        
+        <div class="col-6" *ngFor="let item of bool; let index = index">
+            <button type="button" class="btn btn-success m-1 filter-btn" 
+            (click)="onClickFilters('launch',item, index)" 
+            [ngClass]="{'selctedButton': selectedLaunchIndex === index}">
+                {{item}}
+              </button>
+        </div>
+
+    </div>
+    <p class="text-center flters-header">Successfull Landing</p>
+    <div class="row">
+        
+        <div class="col-6" *ngFor="let item of bool; let index = index">
+            <button type="button" class="btn btn-success m-1 filter-btn" 
+            (click)="onClickFilters('landing',item, index)" 
+            [ngClass]="{'selctedButton': selectedLandingIndex === index}">
+                {{item}}
+              </button>
+        </div>
+
+    </div>
+  </div>
+</div>

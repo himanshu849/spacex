@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
+              
             ],
             "scripts": []
           },
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "spacex-task"
+    }
+  },
+  "defaultProject": "spacex-task",
+  "cli": {
+    "analytics": "821b1561-1357-4542-8354-79b8c7227905"
+  }
 }

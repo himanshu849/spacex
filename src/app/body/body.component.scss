@@ -1,0 +1,39 @@
+.img {
+    width: 100%;
+    padding: 8px;
+    background: rgb(235, 231, 231);
+}
+
+.body-container {
+    padding: 4px;
+    //height: 40vh;
+    text-align: left;
+}
+
+.rocket-card {
+    height: 100%;
+}
+
+@media screen and (min-width:992px) and (max-width:1024px) {
+
+    .cls-1024 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.spinner {
+    margin-top: 300px;
+}
+
+@media only screen and (max-width: 700px) {
+
+}
+
+@media only screen and (min-width: 701px ) and (max-widh: 1024px) {
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+}

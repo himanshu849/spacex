@@ -1,0 +1,40 @@
+.view {
+    width: auto;
+    height: auto;
+    background-color: rgb(223, 222, 222);
+}
+
+.marquee {
+    font-size:18px;
+    //position : sticky;
+    margin-top: 8px;
+}
+
+@media only screen and (max-width: 700px) {
+    .filter {
+        width: 100%;
+    }
+    .body {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 701px ) and (max-width: 1024px) {
+    .filter {
+        width: 45%;
+    }
+    .body {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .filter {
+        width: 20%;
+        float: left;
+    }
+    .body {
+        width: 80%;
+        float: right;
+    }
+}

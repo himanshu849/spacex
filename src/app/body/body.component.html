@@ -1,0 +1,23 @@
+<div class=" text-center justify-content-center">
+    <div class="spinner-border spinner text-primary" role="status" *ngIf="!rocket">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="container-fluid" *ngIf="rocket">
+        <div class="body-container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12 mb-2 cls-1024" *ngFor="let item of rocket">
+                    <div class="card p-3 rocket-card">
+                        <img [src]="item.links.mission_patch" alt="rocket" class="img">
+                        <a href="#">{{item.mission_name}} # {{item.flight_number}}</a>
+                        <h6><strong>Mission Id:</strong> <span *ngFor="let id of item.mission_id">{{id}}</span></h6>
+                        
+                        <h6>Launch Year: {{item.launch_year}}</h6>
+                        <h6>Succesfull Launch: {{item.launch_success}}</h6>
+                        <h6>Succesfull Landing: False</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
