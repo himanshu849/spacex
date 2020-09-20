@@ -18,7 +18,6 @@ export class DataService {
 
   getSpaceXData(): Observable<any> {
     const url = `https://api.spaceXdata.com/v3/launches?limit=100`;
-    this.locaion.go(url);
     return this.http.get(url);
   }
 
@@ -26,43 +25,36 @@ export class DataService {
 
     if (year && landing && landing) {
       const urls = `https://api.spaceXdata.com/v3/launches?limit=100&launch_year=${year}&launch_success=${launch}&land_success=${landing}`;
-      this.locaion.go(urls);
       return this.http.get(urls);
     }
 
     if (year && launch) {
       const urls = `https://api.spaceXdata.com/v3/launches?limit=100&launch_year=${year}&launch_success=${launch}`;
-      this.locaion.go(urls);
       return this.http.get(urls);
     }
 
     if (year && landing) {
       const urls = `https://api.spaceXdata.com/v3/launches?limit=100&launch_year=${year}&land_success=${landing}`;
-      this.locaion.go(urls);
       return this.http.get(urls);
     }
 
     if (launch && landing) {
       const urls = `https://api.spaceXdata.com/v3/launches?limit=100&launch_success=${launch}&land_success=${landing}`;
-      this.locaion.go(urls);
       return this.http.get(urls);
     }
 
     if (launch) {
       const urls = `https://api.spaceXdata.com/v3/launches?limit=100&launch_success=${launch}`;
-      this.locaion.go(urls);
       return this.http.get(urls);
     }
 
     if (landing) {
       const urls = `https://api.spaceXdata.com/v3/launches?limit=100&land_success=${landing}`;
-      this.locaion.go(urls);
       return this.http.get(urls);
     }
 
     if (year) {
       const urls = `https://api.spaceXdata.com/v3/launches?limit=100&launch_year=${year}`;
-      this.locaion.go(urls);
       return this.http.get(urls);
     }
 
