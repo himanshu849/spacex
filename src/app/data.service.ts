@@ -23,7 +23,7 @@ export class DataService {
 
   setFilter(year: number, launch: boolean, landing: boolean): Observable<any> {
 
-    if (year && landing && landing) {
+    if (year && launch && landing) {
       const urls = `https://api.spaceXdata.com/v3/launches?limit=100&launch_year=${year}&launch_success=${launch}&land_success=${landing}`;
       return this.http.get(urls);
     }
