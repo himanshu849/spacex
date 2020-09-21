@@ -13,7 +13,7 @@
                         
                         <h6>Launch Year: {{item.launch_year}}</h6>
                         <h6>Succesfull Launch: {{item.launch_success}}</h6>
-                        <h6>Succesfull Landing: False</h6>
+                        <h6 *ngFor="let landing of item.rocket.first_stage.cores">Succesfull Landing: {{landing.land_success}}</h6>
                     </div>
                 </div>
             </div>
